@@ -1,0 +1,388 @@
+{
+  "chainId": 688689,
+  "chainName": "Pharos Atlantic Testnet",
+  "rpcEndpoint": "https://atlantic.dplabs-internal.com",
+  "explorerUrl": "https://atlantic.pharosscan.xyz",
+  "blockNumber": 32766629,
+  "readAtIso": "2026-11-14T12:09:21.818Z",
+  "fromCache": false,
+  "gasPriceWei": "10000000000",
+  "gasPriceGwei": 10,
+  "gasPriceUnavailable": false,
+  "wallet": {
+    "address": "0x299cE411D822B92594d77b14A8B239a84B2aC15C",
+    "susdc": 0,
+    "susdcRaw": "0",
+    "phrs": 0,
+    "phrsRaw": "0"
+  },
+  "vaults": [
+    {
+      "id": "tbill",
+      "contractName": "PharosTBillRwaVault",
+      "protocolLabel": "RWA Sovereign T-Bills",
+      "shortLabel": "Pharos T-Bill",
+      "category": "RWA",
+      "address": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "blockNumber": 32766629,
+      "totalAssetsSusdc": 8494.816451,
+      "totalSupplyShares": 8497.008032,
+      "sharePriceSusdc": 0.9997420761529533,
+      "baseApyBps": 815,
+      "effectiveApyBps": 815,
+      "entryFeeBps": 0,
+      "exitFeeBps": 0,
+      "utilizationBps": null,
+      "kyaCollateralRatioBps": 10280,
+      "paused": false,
+      "userShares": 0,
+      "userSharesRaw": "0",
+      "userAssetsSusdc": 0,
+      "totalAssetsRaw": "8494816451",
+      "totalSupplyRaw": "8497008032"
+    },
+    {
+      "id": "credit",
+      "contractName": "AtlanticSeniorCreditVault",
+      "protocolLabel": "RWA Senior Private Credit",
+      "shortLabel": "Atlantic Senior Credit",
+      "category": "RWA",
+      "address": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "blockNumber": 32766629,
+      "totalAssetsSusdc": 8001.313608,
+      "totalSupplyShares": 8000,
+      "sharePriceSusdc": 1.000164201,
+      "baseApyBps": 1045,
+      "effectiveApyBps": 438,
+      "entryFeeBps": 12,
+      "exitFeeBps": 5,
+      "utilizationBps": 4200,
+      "kyaCollateralRatioBps": null,
+      "paused": false,
+      "userShares": 0,
+      "userSharesRaw": "0",
+      "userAssetsSusdc": 0,
+      "totalAssetsRaw": "8001313608",
+      "totalSupplyRaw": "8000000000"
+    },
+    {
+      "id": "harbor",
+      "contractName": "HarborBufferLendingPool",
+      "protocolLabel": "DeFi Instant Liquidity",
+      "shortLabel": "Harbor Buffer",
+      "category": "DeFi",
+      "address": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "blockNumber": 32766629,
+      "totalAssetsSusdc": 5000.00007,
+      "totalSupplyShares": 5000,
+      "sharePriceSusdc": 1.000000014,
+      "baseApyBps": 740,
+      "effectiveApyBps": 740,
+      "entryFeeBps": 0,
+      "exitFeeBps": 5,
+      "utilizationBps": null,
+      "kyaCollateralRatioBps": null,
+      "paused": false,
+      "userShares": 0,
+      "userSharesRaw": "0",
+      "userAssetsSusdc": 0,
+      "totalAssetsRaw": "5000000070",
+      "totalSupplyRaw": "5000000000"
+    }
+  ],
+  "unreadableVenues": [],
+  "provenance": [
+    {
+      "key": "rpc.gasPrice",
+      "value": "10000000000 wei (10 gwei)",
+      "contractName": "Pharos Atlantic RPC",
+      "contractAddress": "https://atlantic.dplabs-internal.com",
+      "functionCalled": "eth_gasPrice (latest quote, not block-pinned)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/block/32766629"
+    },
+    {
+      "key": "wallet.phrs",
+      "value": "0 PHRS",
+      "contractName": "Pharos Native Ledger (RPC)",
+      "contractAddress": "0x299cE411D822B92594d77b14A8B239a84B2aC15C",
+      "functionCalled": "eth_getBalance",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x299cE411D822B92594d77b14A8B239a84B2aC15C"
+    },
+    {
+      "key": "wallet.susdc",
+      "value": "0 sUSDC",
+      "contractName": "SentinelUSD (sUSDC)",
+      "contractAddress": "0x3d96d4cc7cd5a0a6d31be15a6d741ca162060c7b",
+      "functionCalled": "balanceOf(address)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x3d96d4cc7cd5a0a6d31be15a6d741ca162060c7b"
+    },
+    {
+      "key": "tbill.totalAssets",
+      "value": "8494.816451 sUSDC",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "totalAssets()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.totalSupply",
+      "value": "8497.008032 shares",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "totalSupply()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.baseApyBps",
+      "value": "815 bps (8.15%)",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "baseApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.effectiveApyBps",
+      "value": "815 bps (8.15%)",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "effectiveApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.entryFeeBps",
+      "value": "0 bps",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "entryFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.exitFeeBps",
+      "value": "0 bps",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "exitFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.paused",
+      "value": "false",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "paused()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.userShares",
+      "value": "0 pTBILL",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "balanceOf(address)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "tbill.userAssets",
+      "value": "0 sUSDC",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "convertToAssets(uint256)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "credit.totalAssets",
+      "value": "8001.313608 sUSDC",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "totalAssets()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.totalSupply",
+      "value": "8000 shares",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "totalSupply()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.baseApyBps",
+      "value": "1045 bps (10.45%)",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "baseApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.effectiveApyBps",
+      "value": "438 bps (4.38%)",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "effectiveApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.entryFeeBps",
+      "value": "12 bps",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "entryFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.exitFeeBps",
+      "value": "5 bps",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "exitFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.paused",
+      "value": "false",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "paused()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.userShares",
+      "value": "0 aCRED",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "balanceOf(address)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "credit.userAssets",
+      "value": "0 sUSDC",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "convertToAssets(uint256)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    },
+    {
+      "key": "harbor.totalAssets",
+      "value": "5000.00007 sUSDC",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "totalAssets()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.totalSupply",
+      "value": "5000 shares",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "totalSupply()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.baseApyBps",
+      "value": "740 bps (7.4%)",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "baseApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.effectiveApyBps",
+      "value": "740 bps (7.4%)",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "effectiveApyBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.entryFeeBps",
+      "value": "0 bps",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "entryFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.exitFeeBps",
+      "value": "5 bps",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "exitFeeBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.paused",
+      "value": "false",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "paused()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.userShares",
+      "value": "0 hBUF",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "balanceOf(address)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "harbor.userAssets",
+      "value": "0 sUSDC",
+      "contractName": "HarborBufferLendingPool",
+      "contractAddress": "0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77",
+      "functionCalled": "convertToAssets(uint256)",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x4ca5d4c42e4f67ab5b3a8946f3f6434cf265ab77"
+    },
+    {
+      "key": "tbill.kyaCollateralRatioBps",
+      "value": "10280 bps",
+      "contractName": "PharosTBillRwaVault",
+      "contractAddress": "0x001ef1ebebe4167dc0645e33875e9235c7dfaf78",
+      "functionCalled": "kyaCollateralRatioBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x001ef1ebebe4167dc0645e33875e9235c7dfaf78"
+    },
+    {
+      "key": "credit.utilizationBps",
+      "value": "4200 bps",
+      "contractName": "AtlanticSeniorCreditVault",
+      "contractAddress": "0x28080450b7be3963f55296ea9f2b45ad9af1b720",
+      "functionCalled": "utilizationBps()",
+      "blockNumber": 32766629,
+      "explorerUrl": "https://atlantic.pharosscan.xyz/address/0x28080450b7be3963f55296ea9f2b45ad9af1b720"
+    }
+  ],
+  "allVenueReadsFailed": false
+}

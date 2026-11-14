@@ -1,0 +1,39 @@
+{
+  "baseUrl": "http://localhost:3200",
+  "checkedAt": "2026-11-14T12:09:31.579Z",
+  "pageStatus": 200,
+  "apiStatus": 200,
+  "block": 32766632,
+  "cached": false,
+  "consoleErrors": [],
+  "directSteps": 2,
+  "guardedWithoutReceipt": "refused",
+  "mobileOverflow": false,
+  "scenarios": [
+    {
+      "id": "rebalance",
+      "verdict": "STAY_PUT",
+      "explanation": "Optimizer Verdict\n⏹ STAY_PUT\nALREADY_IN_OPTIMAL_VAULT\nStay Put in Harbor Buffer (7.40% APY): You are already deployed in the highest net-yielding vault among readable targets under this allocation model. Moving 5,000.00 sUSDC to Pharos T-Bill (5.13% APY) over 90 days would reduce net earnings by -30.55 sUSDC after 2.54 sUSDC of switching costs (2.50 exit + 0.00 entry + 0.04 gas).\n\nSWITCHING COSTS → HARBOR BUFFER\n\nSource exit fee (0 bps)\n\n0.00 sUSDC\n\nTarget entry fee (0 bps)\n\n0.00 sUSDC\n\nGas (live eth_gasPrice)\n\n0 units @ 10.0 gwei · $0.04 floor\n\n0.00 sUSDC\n\nTotal switching cost\n\n0.00 sUSDC\n\n90-DAY YIELD MODEL\n\nStay in Harbor Buffer (7.40%)\n\n91.23 sUSDC\n\nRemain in Harbor Buffer (7.40%) on 5,000.00 post-fee\n\n91.23 sUSDC\n\nGross yield advantage\n\n0.00\n\nExpected NET gain (after all costs)\n\n0.00 sUSDC\n\nBREAK-EVEN & CONDITIONS\n\nNo switch\nzero switching costs\n\nAlready in the optimal venue\n\nHarbor Buffer tops every alternative net of costs — the best alternative (Pharos T-Bill) nets -30.55 sUSDC over 90 days."
+    },
+    {
+      "id": "too-short",
+      "verdict": "STAY_PUT",
+      "explanation": "Optimizer Verdict\n⏹ STAY_PUT\nALREADY_IN_OPTIMAL_VAULT\nStay Put in Pharos T-Bill (8.15% APY): You are already deployed in the highest net-yielding vault among readable targets under this allocation model. Moving 5,000.00 sUSDC to Harbor Buffer (3.70% APY) over 14 days would reduce net earnings by -8.57 sUSDC after 0.04 sUSDC of switching costs (0.00 exit + 0.00 entry + 0.04 gas).\n\nSWITCHING COSTS → PHAROS T-BILL\n\nSource exit fee (0 bps)\n\n0.00 sUSDC\n\nTarget entry fee (0 bps)\n\n0.00 sUSDC\n\nGas (live eth_gasPrice)\n\n0 units @ 10.0 gwei · $0.04 floor\n\n0.00 sUSDC\n\nTotal switching cost\n\n0.00 sUSDC\n\n14-DAY YIELD MODEL\n\nStay in Pharos T-Bill (8.15%)\n\n15.63 sUSDC\n\nRemain in Pharos T-Bill (8.15%) on 5,000.00 post-fee\n\n15.63 sUSDC\n\nGross yield advantage\n\n0.00\n\nExpected NET gain (after all costs)\n\n0.00 sUSDC\n\nBREAK-EVEN & CONDITIONS\n\nNo switch\nzero switching costs\n\nAlready in the optimal venue\n\nPharos T-Bill tops every alternative net of costs — the best alternative (Harbor Buffer) nets -8.57 sUSDC over 14 days."
+    },
+    {
+      "id": "already-optimal",
+      "verdict": "REBALANCE_RECOMMENDED",
+      "explanation": "Optimizer Verdict\n▲ REBALANCE_RECOMMENDED\nRebalance 5,000.00 sUSDC from Atlantic Senior Credit (4.38% APY) → Pharos T-Bill (5.13% APY). Expected net gain over 60 days: +3.61 sUSDC after 2.50 exit fee, 0.00 entry fee and 0.04 gas (total switching cost 2.54 sUSDC). Break-even in 24.8 days — your 60-day horizon clears it.\nPrepare Unsigned Tx Bundle\n\nSWITCHING COSTS → PHAROS T-BILL\n\nSource exit fee (5 bps)\n\n2.50 sUSDC\n\nTarget entry fee (0 bps)\n\n0.00 sUSDC\n\nGas (live eth_gasPrice)\n\n285,000 units @ 10.0 gwei · $0.04 floor\n\n0.04 sUSDC\n\nTotal switching cost\n\n2.54 sUSDC\n\n60-DAY YIELD MODEL\n\nStay in Atlantic Senior Credit (4.38%)\n\n36.00 sUSDC\n\nMove to Pharos T-Bill (5.13%) on 4,997.50 post-fee\n\n42.15 sUSDC\n\nGross yield advantage\n\n+6.15\n\nExpected NET gain (after all costs)\n\n+3.61 sUSDC\n\nBREAK-EVEN & CONDITIONS\n\n24.8\ndays to recover fees + gas\nhorizon 60d ≥ ⌈break-even⌉ 25d\n\nDifferent target venue\n\nBest move: Atlantic Senior Credit → Pharos T-Bill.\n\nMinimum holding period recovered\n\n60-day horizon vs 24.8-day break-even (fees + gas of 2.54 sUSDC repaid by a 0.10 sUSDC/day yield edge).\n\nNet gain clears hurdle\n\nExpected net gain +3.61 sUSDC vs your 2.00 sUSDC minimum."
+    },
+    {
+      "id": "below-hurdle",
+      "verdict": "STAY_PUT",
+      "explanation": "Optimizer Verdict\n⏹ STAY_PUT\nHOLDING_PERIOD_TOO_SHORT\nStay Put in Harbor Buffer (7.40% APY): Your 7-day holding period is shorter than the 68.0-day break-even horizon required to recover Pharos T-Bill's 0 bps entry fee (0.00 sUSDC) + 5 bps Harbor Buffer exit fee (0.03 sUSDC) + 0.04 sUSDC gas. Rebalancing for 7 days would result in a net outcome of -0.06 sUSDC — below your 2.00 sUSDC minimum rebalance hurdle. On a 50.00 sUSDC position the 0.07 sUSDC switching cost dwarfs the 0.01 sUSDC 7-day yield spread — gas friction consumes the micro-spread.\n\nSWITCHING COSTS → PHAROS T-BILL\n\nSource exit fee (5 bps)\n\n0.03 sUSDC\n\nTarget entry fee (0 bps)\n\n0.00 sUSDC\n\nGas (live eth_gasPrice)\n\n285,000 units @ 10.0 gwei · $0.04 floor\n\n0.04 sUSDC\n\nTotal switching cost\n\n0.07 sUSDC\n\n7-DAY YIELD MODEL\n\nStay in Harbor Buffer (7.40%)\n\n0.07 sUSDC\n\nMove to Pharos T-Bill (8.10%) on 49.98 post-fee\n\n0.08 sUSDC\n\nGross yield advantage\n\n+0.01\n\nExpected NET gain (after all costs)\n\n-0.06 sUSDC\n\nBREAK-EVEN & CONDITIONS\n\n68.0\ndays to recover fees + gas\nhorizon 7d < ⌈break-even⌉ 68d\n\nDifferent target venue\n\nBest move: Harbor Buffer → Pharos T-Bill.\n\nMinimum holding period recovered\n\n7-day horizon vs 68.0-day break-even (fees + gas of 0.07 sUSDC repaid by a 0.00 sUSDC/day yield edge).\n\nNet gain clears hurdle\n\nExpected net gain -0.06 sUSDC vs your 2.00 sUSDC minimum."
+    },
+    {
+      "id": "idle-deploy",
+      "verdict": "REBALANCE_RECOMMENDED",
+      "explanation": "Optimizer Verdict\n▲ REBALANCE_RECOMMENDED\nRebalance 3,000.00 sUSDC from Wallet (idle) (0.00% APY) → Pharos T-Bill (6.02% APY). Expected net gain over 45 days: +22.24 sUSDC after 0.00 exit fee, 0.00 entry fee and 0.04 gas (total switching cost 0.04 sUSDC). Break-even in 0.1 days — your 45-day horizon clears it.\nPrepare Unsigned Tx Bundle\n\nSWITCHING COSTS → PHAROS T-BILL\n\nSource exit fee (idle wallet)\n\n0.00 sUSDC\n\nTarget entry fee (0 bps)\n\n0.00 sUSDC\n\nGas (live eth_gasPrice)\n\n190,000 units @ 10.0 gwei · $0.04 floor\n\n0.04 sUSDC\n\nTotal switching cost\n\n0.04 sUSDC\n\n45-DAY YIELD MODEL\n\nStay in Wallet (idle) (0.00%)\n\n0.00 sUSDC\n\nMove to Pharos T-Bill (6.02%) on 3,000.00 post-fee\n\n22.28 sUSDC\n\nGross yield advantage\n\n+22.28\n\nExpected NET gain (after all costs)\n\n+22.24 sUSDC\n\nBREAK-EVEN & CONDITIONS\n\n0.1\ndays to recover fees + gas\nhorizon 45d ≥ ⌈break-even⌉ 1d\n\nDifferent target venue\n\nBest move: Wallet (idle) → Pharos T-Bill.\n\nMinimum holding period recovered\n\n45-day horizon vs 0.1-day break-even (fees + gas of 0.04 sUSDC repaid by a 0.50 sUSDC/day yield edge).\n\nNet gain clears hurdle\n\nExpected net gain +22.24 sUSDC vs your 2.00 sUSDC minimum."
+    }
+  ]
+}
